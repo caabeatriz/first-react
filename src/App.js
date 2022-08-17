@@ -6,10 +6,14 @@ function App() {
   const objeto = {
     nome:  'Carol'
   }
+
+  function mostrarNome(sobrenome){
+    return `Caról ${sobrenome}`
+  }
   const ativo = false;
   return (
     <>
-    {titulo}
+    {mostrarNome('Sìlva')}
    <p className= {ativo ? 'azul' : 'amarelo'}> { objeto.nome} </p>
    </>
   );
